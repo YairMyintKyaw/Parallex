@@ -22,9 +22,7 @@ tl.to("#scene>div:nth-child(1)>div",{
     rotate:0, opacity:0
 },"<").to("#scene>div:nth-child(3)>div",{
     rotate:360, opacity:1
-},"<").to("#scene",{
-    scale:1.1
-})
+},"<")
 
 
 // Smooth scroll
