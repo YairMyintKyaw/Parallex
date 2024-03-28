@@ -40,13 +40,14 @@ body {
 #scene {
   height: 100vh;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   padding: 0 50px;
   background: radial-gradient(circle, #e0aaff 0%, #9d4edd 100%, #5a189a 100%);
   position: relative;
+  overflow: hidden;
 }
+
 #scene::after{
   content: "";
   width: 100%;
@@ -67,14 +68,21 @@ body {
   flex: 1;
 }
 
-.main__content__card{
-}
-
-
 #scene>div {
-  display: flex;
+  display: flex!important;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+}
+
+#scene>div:nth-child(2)>div, #scene>div:nth-child(3)>div{
+  opacity: 0;
 }
 
 .img01,
@@ -82,11 +90,11 @@ body {
 .img03 {
   width: 500px;
   animation: float 4s ease-in-out infinite;
-
 }
 
 .img02{
   animation-delay: 1s;
+
 }
 .img03{
   animation-delay: 2s;
@@ -94,9 +102,9 @@ body {
 
 @keyframes float {
   0%,100%{
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
   50%{
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 }

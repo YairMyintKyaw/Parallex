@@ -9,15 +9,24 @@
 </head>
 
 <body>
-  <div data-relative-input="true"  id="scene">
-    <!-- <div data-depth="0.2"><img class="img01" src="/assets/img/img01.png" alt=""></div> -->
-    <div data-depth="0.3"><img class="img02" src="./assets/img/img02.png" alt=""></div>
-    <!-- <div data-depth="0.4"><img class="img03" src="/assets/img/img03.png" alt=""></div> -->
+  <div data-relative-input="true" id="scene">
+    <div data-depth="0.2">
+      <div><img class="img01" src="/assets/img/img01.png" alt=""></div>
+    </div>
+    <div data-depth="0.3">
+      <div><img class="img02" src="./assets/img/img02.png" alt=""></div>
+    </div>
+    <div data-depth="0.4">
+      <div><img class="img03" src="/assets/img/img03.png" alt=""></div>
+    </div>
     <h1 data-depth="0.1" class="heading">パラレックス</h1>
     <p data-depth="0.1" class="name">イェ・ミン・チョー</p>
   </div>
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
